@@ -1,0 +1,66 @@
+
+yarn add styled-components-> styles for components.
+yarn add @types/styled-components - add module to intepret
+yarn add polished -> mod in corlos
+
+
+
+sempre que for criado algo na aplicação que for clicado e,
+sempre bom ultiliza a(ancora) ou button
+
+
+quando cria uma div
+trocou o eixo, ai precisa inclui um container
+
+
+yarn add react-icons
+
+api do github.
+não e precisso colocar a tipagem em tudo que seu repository
+ira ter
+
+
+
+lecutere 5
+tratativas de erro
+
+
+if (!newRepo) {
+      setInputError('Digite o autor/nome do repositório');
+      return;
+      /**this return avoid to execulte this part  */
+    }
+
+aqui e um if porem sem o else
+  {/* one type of if, but without  else*/}
+      {inpurtError && <Error>{inpurtError}</Error>}
+
+
+styled-components
+  funcionalidade mais bacana do styled
+        ter acesso a propriedades que nos passamos pro
+        component styled, por dentro dos estilos
+
+Propriedade hasError
+  interface FormProps {
+    hasError: boolean;
+  }
+  export const Form = styled.form<FormProps>`
+  how to acess the props
+  incluindo uma função (arrow func) ,que recebe minhas props
+    ${(props) =>
+      props.hasError &&
+      css`
+        border-color: #c53030;
+    `}
+
+condtion true or false
+  {arry, obj, string, number }
+  String => Boolean
+  hasError={Boolean(inpurtError)}
+
+  conditions:
+    truthy => Any value it isn`t empty;
+    falsy  => value is empty
+
+  !! converted to boolean but contray
